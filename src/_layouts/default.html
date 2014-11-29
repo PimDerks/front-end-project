@@ -1,0 +1,51 @@
+{% include "../_includes/document/document-open.html" %}
+
+    <head>
+
+        {% include "../_includes/document/document-head.html" %}
+
+        <title>
+            {% block title %}
+                Default title
+            {% endblock %}
+        </title>
+
+        {% include "../_includes/document/document-head-includes.html" %}
+
+    </head>
+
+    <body class="baseline">
+
+        <!-- for FED purposes only, do not copy -->
+        <a id="toggle" href="#" style="position:fixed; top:3em; right:0; background:white; padding:.75em; z-index:1000; background:black; color:white; text-decoration:none;">toggle baseline</a>
+        <script>
+            var link = document.getElementById('toggle');
+            link.addEventListener('click',function(e){
+                e.preventDefault();
+                e.stopPropagation();
+                if(document.body.classList.contains('baseline')){
+                    document.body.classList.remove('baseline');
+                } else {
+                    document.body.classList.add('baseline');
+                }
+            });
+        </script>
+        <!-- /for FED purposes only, do not copy -->
+
+        {% include "../_includes/components/cookie.html" %}
+
+        {% include "../_includes/layout/header.html" %}
+
+        {% include "../_includes/layout/navigation.html" %}
+
+        {% block content %}
+            Placeholder for content.
+        {% endblock %}
+
+        {% include "../_includes/layout/sitemap.html" %}
+
+        {% include "../_includes/layout/footer.html" %}
+
+    {% include "../_includes/document/document-scripts.html" %}
+
+{% include "../_includes/document/document-foot.html" %}

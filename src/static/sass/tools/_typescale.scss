@@ -1,0 +1,45 @@
+@mixin font-size-alpha {
+  font-size:1.8889em; /* 34px / 18 */
+  line-height:1.588235em; /* 54px */
+}
+
+@mixin font-size-beta {
+  font-size: 1.5em; /* 27px */
+  line-height:1.5em; /* 40.5/27 */
+}
+
+@mixin font-size-gamma {
+  font-size:1.3333em; /* 24px */
+  line-height:1.6875em; /* 40.5/24px */
+}
+
+@mixin font-size-delta {
+  font-size:1.111em; /* 20px */
+  line-height:1.35em; /* 27px */
+}
+
+@mixin margin-bottom-alpha {
+  margin-bottom:.79411em; /* 34/27 */
+}
+
+@mixin margin-bottom-beta {
+  margin-bottom:1em; /* 27/27 */
+}
+
+@mixin margin-bottom-gamma {
+  margin-bottom:1.125em; /* 27/24 */
+}
+
+@mixin margin-bottom-delta {
+  margin-bottom:1.35em; /* 27/20 */
+}
+
+@mixin font-size-small {
+  font-size:.875em; /* 14/16 */
+  line-height:1.7142857em; /* 24/14 */
+}
+
+@mixin font-size-extra-small {
+  font-size:.75em; /* 12/16 */
+  line-height:2em; /* 24/12 */
+}

@@ -1,0 +1,76 @@
+<script src="{{ site.path }}/static/js/vendor/monotype/gridset-overlay.js"></script>
+
+<!--[if lte IE 9]>
+<script src="{{ site.path }}/static/js/shim/all.js"></script>
+<![endif]-->
+
+<script data-main="{{ site.path }}/static/js/qpark/main" src="{{ site.path }}/static/js/vendor/jrburke/require.js"></script>
+<script>
+    define('config',{
+        'modules':{
+
+            'ui/Print':{
+                options:{
+                    locale:{
+                        'print':'Print this page'
+                    }
+
+                }
+            },
+
+            'ui/Cookie':{
+                options:{
+                    locale:{
+                        'title':'Cookies',
+                        'text':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dapibus lacus ut purus blandit mollis. Donec sit amet aliquet nisl. Nulla ac luctus mauris. Integer ligula nisl, semper imperdiet vulputate et, consequat id risus. Cras pharetra vulputate velit sed consectetur.',
+                        'button':'Accept'
+                    },
+                    cookieId:'qookie'
+                }
+            },
+
+
+            'ui/Booking':{
+                options:{
+                    locale:{
+                        'errorDuration':'The minimum duration for a reservation is {0} hours. Please modify your arrival or departure date and/or time.',
+                        'errorExitBeforeEnter':'The exit time is before or equal to the entry-time.'
+                    },
+                    format:'DD-MM-YYYY'
+                }
+            },
+
+            'ui/Form':{
+                options:{
+                    disableSubmitUntilValid:false
+                }
+            },
+
+            /* ui/Dialog */
+            'ui/Dialog':{
+                options:{
+                    locale:{
+                        close:'Close'
+                    }
+                }
+            },
+
+            'ui/AddressMap':{
+                options:{
+                    locale:{
+                        more:'Read more'
+                    }
+                }
+            },
+
+            'ui/Map':{
+                options:{
+                    locale:{
+                        more:'Read more'
+                    }
+                }
+            }
+
+        }
+    });
+</script>

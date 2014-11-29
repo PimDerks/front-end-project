@@ -1,0 +1,57 @@
+/* Bold
+----------------------------------------------- */
+
+a,
+strong, b,
+dt {
+  font-weight:bold;
+}
+
+/* Code, kbd, samp
+----------------------------------------------- */
+
+code, kbd, samp {
+}
+
+/* Pre
+----------------------------------------------- */
+
+pre {
+  overflow:auto;
+  white-space:pre;
+  word-wrap:normal;
+
+  &,
+  code, kbd, samp {
+
+  }
+
+}
+
+/* Images
+----------------------------------------------- */
+
+img {
+  margin-bottom:1.5em;
+  max-width:100%;
+  vertical-align:bottom;
+}
+
+/* Selected text
+----------------------------------------------- */
+
+::selection {
+  background-color:$color-black;
+  color:$color-white;
+}
+
+/* HR
+----------------------------------------------- */
+
+hr {
+  background-color:$color-delta;
+  border-width:0;
+  height:2px;
+  margin:1.5em 0;
+  width:100%;
+}

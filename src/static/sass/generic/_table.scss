@@ -1,0 +1,35 @@
+/* Table
+----------------------------------------*/
+
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+  margin-bottom:1.5em;
+  table-layout:fixed;
+  width:100%;
+
+  tr {
+    border-bottom:1px solid $color-epsilon;
+  }
+
+  th {
+    text-align:left;
+  }
+
+  thead th {
+    color:$color-primary;
+    font-weight:bold;
+  }
+
+  thead tr {
+    border-bottom-width:2px;
+  }
+
+  th,
+  td {
+    box-sizing:border-box;
+    padding:.75em .75em .75em 0;
+    vertical-align:top;
+  }
+
+}

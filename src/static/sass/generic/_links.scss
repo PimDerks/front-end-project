@@ -1,0 +1,21 @@
+/* Links
+----------------------------------------------- */
+
+a {
+
+  &:link {
+    color:$color-primary;
+    text-decoration:underline;
+  }
+
+  &:focus,
+  &:hover {
+    color:$color-alpha;
+    text-decoration:none;
+  }
+
+  &:visited {
+    color:$color-primary;
+  }
+
+}
