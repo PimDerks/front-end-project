@@ -14,7 +14,7 @@ module.exports = function(grunt) {
         env:{
             src:'./src',
             dest:'./dest',
-            dev: '../Website/QPark.Pegasus/QPark.Pegasus.Web/static/',
+            dev: './dev',
             site:'./www',
             api:'./api',
             temp:'./tmp',
@@ -32,11 +32,11 @@ module.exports = function(grunt) {
             dev:{
                 options:{
                     style:'nested',
-                    sourcemap:true
+                    sourcemap:false
                 },
                 files:{
-                    '<%= env.temp %>/css/styles.merged.css':'<%= env.static %>/scss/styles.scss',
-                    '<%= env.temp %>/css/print.css':'<%= env.static %>/scss/print.scss'
+                    '<%= env.temp %>/css/screen.merged.css':'<%= env.static %>/sass/screen.scss',
+                    '<%= env.temp %>/css/print.css':'<%= env.static %>/sass/print.scss'
                 }
             }
         },
@@ -56,8 +56,8 @@ module.exports = function(grunt) {
                 options:{
                     browsers:['last 2 versions', 'ie 9']
                 },
-                src:'<%= env.temp %>/css/styles.merged.css',
-                dest:'<%= env.temp %>/css/styles.prefixed.css'
+                src:'<%= env.temp %>/css/screen.merged.css',
+                dest:'<%= env.temp %>/css/screen.prefixed.css'
             }
         },
         cssmin:{
@@ -79,7 +79,7 @@ module.exports = function(grunt) {
                 force:true
             },
             all:[
-                '<%= env.static %>/js/qpark/**/*.js'
+                '<%= env.static %>/js/client/**/*.js'
             ]
         },
 
@@ -91,9 +91,9 @@ module.exports = function(grunt) {
                     optimize:'uglify', // none
 
                     // use the sites main configuration file
-                    mainConfigFile:'<%= env.static %>/js/qpark/main.js',
+                    mainConfigFile:'<%= env.static %>/js/client/main.js',
                     appDir:'<%= env.static %>/js/',
-                    baseUrl:'qpark/',
+                    baseUrl:'client/',
                     dir:'<%= env.temp %>/js',
 
                     // core modules to merge
@@ -151,7 +151,7 @@ module.exports = function(grunt) {
         jasmine:{
             all:{
                 src:[
-                    '<%= env.static %>/js/qpark/**/*.js'
+                    '<%= env.static %>/js/client/**/*.js'
                 ],
                 options:{
 
@@ -161,11 +161,11 @@ module.exports = function(grunt) {
 
                     template:require('grunt-template-jasmine-requirejs'),
                     templateOptions:{
-                        requireConfigFile:'<%= env.static %>/js/qpark/main.js',
+                        requireConfigFile:'<%= env.static %>/js/client/main.js',
                         requireConfig:{
-                            baseUrl:'./src/static/js/qpark',
+                            baseUrl:'./src/static/js/client',
                             paths:{
-                                'static/js/qpark':'.'
+                                'static/js/client':'.'
                             },
                             config:{
                                 'data/DataProvider':{

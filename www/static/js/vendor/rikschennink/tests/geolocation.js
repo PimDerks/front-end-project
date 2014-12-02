@@ -1,0 +1,1 @@
+define([],function(){return{_support:!1,setup:function(){this._support="geolocation"in navigator},assert:function(e){return e==="true"&&this._support}}});

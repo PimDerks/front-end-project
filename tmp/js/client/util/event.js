@@ -1,0 +1,1 @@
+define([],function(){return{addPrefixedEvent:function(e,t,n){var r=["webkit","moz","MS","o",""];for(var i=0;i<r.length;i++)r[i]||(t=t.toLowerCase()),e.addEventListener(r[i]+t,n,!1)},removePrefixedEvent:function(e,t,n){var r=["webkit","moz","MS","o",""];for(var i=0;i<r.length;i++)r[i]||(t=t.toLowerCase()),e.removeEventListener(r[i]+t,n,!1)}}});

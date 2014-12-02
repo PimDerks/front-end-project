@@ -1,0 +1,1 @@
+define([],function(){return function(){var e=arguments[0],t=arguments[1].length&&!arguments[2],n=t?arguments[1]:arguments,r=t?0:1,i=n.length;for(;r<i;r++)e=e.replace(new RegExp("\\{"+r+"\\}","g"),n[r]);return e}});

@@ -14,7 +14,7 @@
 
     </head>
 
-    <body class="baseline">
+    <body class="baseline1">
 
         <!-- for FED purposes only, do not copy -->
         <a id="toggle" href="#" style="position:fixed; top:3em; right:0; background:white; padding:.75em; z-index:1000; background:black; color:white; text-decoration:none;">toggle baseline</a>
@@ -32,17 +32,15 @@
         </script>
         <!-- /for FED purposes only, do not copy -->
 
-        {% include "../_includes/components/cookie.html" %}
-
         {% include "../_includes/layout/header.html" %}
 
         {% include "../_includes/layout/navigation.html" %}
 
+        {% include "../_includes/components/scroller.html" %}
+
         {% block content %}
             Placeholder for content.
         {% endblock %}
-
-        {% include "../_includes/layout/sitemap.html" %}
 
         {% include "../_includes/layout/footer.html" %}
 

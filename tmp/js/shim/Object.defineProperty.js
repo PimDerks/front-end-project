@@ -1,0 +1,1 @@
+!Object.defineProperty&&Object.prototype.__defineGetter__&&(Object.defineProperty=function(e,t,n){n.get&&e.__defineGetter__(t,n.get),n.set&&e.__defineSetter__(t,n.set)});

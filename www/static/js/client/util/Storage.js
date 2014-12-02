@@ -1,0 +1,1 @@
+define(["util/Cookie"],function(e){return{write:function(t,n){window.localStorage?(localStorage.setItem(t,n),e.write(t,n)):e.write(t,n)},read:function(t){return window.localStorage?localStorage.getItem(t):e.read(t)}}});

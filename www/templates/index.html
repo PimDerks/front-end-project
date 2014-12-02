@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html class="no-js" lang="nl">
+
+    <head>
+
+        <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+<meta name=”MobileOptimized” content=”width”/>
+<meta name=”HandheldFriendly” content=”true”/>
+
+<meta name="author" content="" />
+<meta name="description" content="" />
+
+<meta name="theme-color" content="#db5945">
+
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+
+
+
+        <title>
+            
+    Test
+
+        </title>
+
+        <!--[if gt IE 8]><!-->
+<script>document.documentElement.className = 'js';</script>
+<link rel="stylesheet" media="screen" href="/static/css/screen.prefixed.css" />
+<link rel="stylesheet" media="print" href="/static/css/print.css" />
+<script src="/static/js/vendor/paulirish/modernizr.js"></script>
+<!--<![endif]-->
+
+
+    </head>
+
+    <body class="baseline1">
+
+        <!-- for FED purposes only, do not copy -->
+        <a id="toggle" href="#" style="position:fixed; top:3em; right:0; background:white; padding:.75em; z-index:1000; background:black; color:white; text-decoration:none;">toggle baseline</a>
+        <script>
+            var link = document.getElementById('toggle');
+            link.addEventListener('click',function(e){
+                e.preventDefault();
+                e.stopPropagation();
+                if(document.body.classList.contains('baseline')){
+                    document.body.classList.remove('baseline');
+                } else {
+                    document.body.classList.add('baseline');
+                }
+            });
+        </script>
+        <!-- /for FED purposes only, do not copy -->
+
+        <header class="page-header">
+</header>
+
+        <nav class="page-navigation">
+</nav>
+
+        <ul class="blank-list" data-module="ui/Scroller" data-options='{"paging":true,"controls":true}'>
+    <li>
+        <figure>
+            <img src="http://www.dummyimage.com/600x300" alt="" />
+            <figcaption>Lorem ipsum dolor sit amet.</figcaption>
+        </figure>
+    </li><!--
+    --><li>
+    <figure>
+        <img src="http://www.dummyimage.com/600x300" alt="" />
+        <figcaption>Lorem ipsum dolor sit amet.</figcaption>
+    </figure>
+</li><!--
+    --><li>
+    <figure>
+        <img src="http://www.dummyimage.com/600x300" alt="" />
+        <figcaption>Lorem ipsum dolor sit amet.</figcaption>
+    </figure>
+</li><!--
+    --><li>
+    <figure>
+        <img src="http://www.dummyimage.com/600x300" alt="" />
+        <figcaption>Lorem ipsum dolor sit amet.</figcaption>
+    </figure>
+</li><!--
+    --><li>
+    <figure>
+        <img src="http://www.dummyimage.com/600x300" alt="" />
+        <figcaption>Lorem ipsum dolor sit amet.</figcaption>
+    </figure>
+</li><!--
+    --><li>
+    <figure>
+        <img src="http://www.dummyimage.com/600x300" alt="" />
+        <figcaption>Lorem ipsum dolor sit amet.</figcaption>
+    </figure>
+</li>
+</ul>
+
+
+        
+
+<p>Content.</p>
+
+
+
+        <footer role="contentinfo" class="page-footer">
+</footer>
+
+    <!--[if lte IE 9]>
+<script src="/static/js/shim/all.js"></script>
+<![endif]-->
+
+<script data-main="/static/js/client/main" src="/static/js/vendor/jrburke/require.js"></script>
+<script>
+    define('config',{
+        'modules':{
+
+            'ui/Form':{
+                options:{
+                    disableSubmitUntilValid:false
+                }
+            }
+
+        }
+    });
+</script>
+
+</body>
+</html>

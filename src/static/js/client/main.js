@@ -10,7 +10,8 @@ requirejs.config({
         'reqwest':'../vendor/ded/reqwest',
         'text':'../vendor/jrburke/text',
         'h5f':'../vendor/ryanseddon/h5f',
-        'moment':'../vendor/momentjs/moment'
+        'moment':'../vendor/momentjs/moment',
+        'hammer':'../vendor/eightmedia/hammer'
     }
 });
 

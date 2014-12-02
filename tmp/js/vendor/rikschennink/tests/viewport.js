@@ -1,0 +1,1 @@
+define([],function(){var e="web";return{setup:function(){var t=(new RegExp('"isCordova":true')).test(localStorage.getItem("app-context.json"));t&&(e=navigator.userAgent.match(/(Android)/)?"android":"ios")},assert:function(t){return t==="hybrid"?e!=="web":e==t}}});

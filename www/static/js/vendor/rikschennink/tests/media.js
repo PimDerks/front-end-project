@@ -1,0 +1,1 @@
+define([],function(){return{support:function(){return"matchMedia"in window},arrange:function(e){if(e==="supported")return;var t=this;this._mql=window.matchMedia(e),this._mql.addListener(function(){t.onchange()})},assert:function(e){return this.supported()?e==="supported"?this.supported():this._mql.matches:!1}}});

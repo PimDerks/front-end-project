@@ -1,0 +1,87 @@
+/* Scroller
+---------------------------------------------------------*/
+
+.scroller {
+  overflow:hidden;
+}
+
+.js .scroller-items {
+  cursor:move;
+  cursor:-moz-grab;
+  cursor:-webkit-grab;
+  overflow:hidden;
+  position:relative;
+}
+
+.scroller-items {
+  transform-style:preserve-3d; /* http://stackoverflow.com/questions/7764859/moz-transform-z-index-bug */
+  left:0;
+  transform:translateX(0);
+
+  > li {
+    display:inline-block;
+    vertical-align:bottom;
+    width:400px;
+  }
+
+  &.animate {
+    transition:all 300ms ease-out;
+  }
+
+}
+
+.js .dragging .scroller-items {
+  cursor:move;
+  cursor:-moz-grabbing;
+  cursor:-webkit-grabbing;
+  transition:none;
+}
+
+.scroller-items li {
+  height:0;
+  overflow:hidden;
+}
+
+.scroller-items li:first-child,
+.scroller-initialized .scroller-items li,
+.no-js .scroller-items li{
+  height:auto;
+  overflow:auto;
+}
+
+/* Scroller Paging
+---------------------------------------------------------*/
+
+.scroller-paging {
+  text-align:center;
+
+  > li {
+    display:inline-block;
+    margin:0 .1em;
+  }
+
+  button,
+  button:focus,
+  button:active,
+  button:hover {
+    background-color:transparent;
+    box-shadow:none;
+    color:$color-gamma;
+    padding:0;
+    top:auto;
+
+    &:before {
+      content:'●';
+    }
+
+  }
+
+  button:focus {
+    outline:1px dotted black;
+  }
+
+  .active button {
+    color:$color-primary;
+  }
+
+}
